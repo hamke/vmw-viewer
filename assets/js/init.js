@@ -4,7 +4,7 @@ const uri = window.location.toString();
 const clean_uri = uri.substring(0, uri.indexOf("?"));
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-var urlInfo = urlParams.get('url');
+var urlInfo = urlParams.get('slug');
 
 function closeOverlay() {
   var target = $("#overlay");

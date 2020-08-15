@@ -50,7 +50,7 @@ function showNewData( newUrl ) {
       }
     }
   }
-  let new_uri = clean_uri + '?url=' + newUrl;
+  let new_uri = clean_uri + '?slug=' + newUrl;
   window.history.replaceState({}, document.title, new_uri);
   let iframeContent = '<iframe id="iframe" onload="onLoadCallback()" src="http://viewmore.work/kr/' + newUrl + '/" frameborder="0" width="100%;"></iframe>';
   let footerUrl = '<a href="http://viewmore.work/kr/' + newUrl + '/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> viewmore.work/kr/' + newUrl + ' <i class="fas fa-arrow-right"></i></a>';
